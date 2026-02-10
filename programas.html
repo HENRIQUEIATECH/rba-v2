@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programação RBA v2</title>
+    <style>
+        :root {
+            --verde-rba: #084424;
+            --bege-claro: #fcfaf5;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bege-claro);
+            color: var(--verde-rba);
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            border-bottom: 2px solid var(--verde-rba);
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        h1 { margin: 0; font-size: 24px; text-transform: uppercase; }
+        p.subtitle { font-style: italic; margin-top: 5px; }
+
+        .grade-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .item-programa {
+            background: white;
+            border-left: 5px solid var(--verde-rba);
+            padding: 15px;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .horario {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #d4a017; /* Tom dourado para destaque */
+        }
+        .titulo-programa {
+            display: block;
+            font-size: 1.1em;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+        .descricao {
+            font-size: 0.9em;
+            color: #555;
+        }
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 0.8em;
+            border-top: 1px solid #ddd;
+            padding-top: 20px;
+        }
+        .btn-site {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: var(--verde-rba);
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>RBA v2</h1>
+    <p class="subtitle">Programação Diária</p>
+</header>
+
+<div class="grade-container">
+    <div class="item-programa">
+        <span class="horario">08:00 - 10:00</span>
+        <span class="titulo-programa">Clássicos Musicais</span>
+        <span class="descricao">Uma seleção erudita para começar o dia com harmonia.</span>
+    </div>
+
+    <div class="item-programa">
+        <span class="horario">10:00 - 12:00</span>
+        <span class="titulo-programa">Nossa História</span>
+        <span class="descricao">Crônicas, memórias e os caminhos da nossa terra.</span>
+    </div>
+
+    <div class="item-programa">
+        <span class="horario">14:00 - 16:00</span>
+        <span class="titulo-programa">Sertanejo Raiz</span>
+        <span class="descricao">A alma do Brasil em cada acorde de viola.</span>
+    </div>
+
+    <div class="item-programa">
+        <span class="horario">19:00 - 20:00</span>
+        <span class="titulo-programa">A Voz do Brasil</span>
+        <span class="descricao">Informativo oficial do Governo Federal.</span>
+    </div>
+</div>
+
+<footer>
+    <p>Conheça mais sobre nossos projetos:</p>
+    <a href="https://iartium.com" class="btn-site">Visite o iartium.com</a>
+    <br><br>
+    <p>&copy; 2026 RBA v2 - Tecnologia e Cultura</p>
+</footer>
+
+</body>
+</html>
